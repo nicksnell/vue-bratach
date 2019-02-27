@@ -1,0 +1,57 @@
+{
+  "name": "vue-bratach",
+  "version": "1.0.0",
+  "description": "Feature flags for Vue",
+  "module": "dist/vue-bratach.es.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nicksnell/vue-bratach.git"
+  },
+  "author": "Nick Snell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicksnell/vue-bratach/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "vue": "^2.6.7"
+  },
+  "homepage": "https://github.com/nicksnell/vue-bratach#readme",
+  "babel": {
+    "babelrc": false,
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "env"
+          ]
+        ]
+      }
+    }
+  },
+  "jest": {
+    "transform": {
+      ".+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/.+\\.js$"
+    ]
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": false
+  }
+}

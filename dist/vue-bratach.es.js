@@ -1,0 +1,1 @@
+class FeatureFlags{constructor(s={}){this.flags=s}hasFlag(s){return!!this.flags.hasOwnProperty(s)}getFlag(s){return this.hasFlag(s)?this.flags[s]:null}}const VueGne={install(s,t){t||(t={});const a=t.flags;s.prototype.$featureFlags=new FeatureFlags(a)}};export default VueGne;
