@@ -1,15 +1,17 @@
 {
   "name": "vue-bratach",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Feature flags for Vue",
   "module": "dist/vue-bratach.es.js",
   "scripts": {
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint --fix src/**/*.js",
     "test": "jest",
     "build": "rollup -c"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/nicksnell/vue-bratach.git"
+    "url": "https://github.com/nicksnell/vue-bratach.git"
   },
   "author": "Nick Snell",
   "license": "MIT",
@@ -21,13 +23,19 @@
     "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
-    "jest": "^23.6.0",
-    "prettier": "^1.15.3",
-    "rollup": "^1.1.0",
+    "eslint": "^6.5.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.23.1",
     "rollup-plugin-babel": "^3.0.3",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^3.0.0",
-    "vue": "^2.6.7"
+    "vue": "^2.6.10"
   },
   "homepage": "https://github.com/nicksnell/vue-bratach#readme",
   "babel": {

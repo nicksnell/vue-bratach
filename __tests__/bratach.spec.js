@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueBratach from '../src/index'
+import VueBratach from '../src/bratach'
 import FeatureFlags from '../src/flags'
 
 test('correctly stores flags', () => {

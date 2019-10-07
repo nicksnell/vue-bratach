@@ -1,11 +1,11 @@
 import FeatureFlags from './flags'
 
-const VueGne = {
-  install(Vue, options) {
+const VueBratach = {
+  install (Vue, options) {
     if (!options) options = {}
     const flags = options.flags
     Vue.prototype.$featureFlags = new FeatureFlags(flags)
   }
 }
 
-export default VueGne
+export default VueBratach

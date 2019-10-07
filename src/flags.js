@@ -5,19 +5,19 @@
  * @class
  */
 export default class FeatureFlags {
-  constructor(flags = {}) {
+  constructor (flags = {}) {
     this.flags = flags
   }
 
-  hasFlag(name) {
-    if (this.flags.hasOwnProperty(name)) {
+  hasFlag (name) {
+    if (Object.getOwnPropertyDescriptor(this.flags, name)) {
       return true
     }
 
     return false
   }
 
-  getFlag(name) {
+  getFlag (name) {
     if (this.hasFlag(name)) {
       return this.flags[name]
     }
