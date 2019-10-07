@@ -1,4 +1,4 @@
-import uglify from 'rollup-plugin-uglify'
+import { terser } from 'rollup-plugin-terser'
 import babel from 'rollup-plugin-babel'
 
 export default {
@@ -6,11 +6,15 @@ export default {
   output: [
     {
       file: 'dist/vue-bratach.es.js',
-      format: 'es',
+      format: 'es'
     },
   ],
   plugins: [
-    babel(),
-    uglify(),
+    babel({
+      include: ['src/**/*']
+    }),
+    terser({
+      mangle: false
+    })
   ]
 }
